@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dbinfo>
+    <wellList name="a" id="1">
+        <equipment name="EQ_1_1" id="1"/>
+        <equipment name="EQ_1_2" id="2"/>
+        <equipment name="EQ_1_3" id="3"/>
+    </wellList>
+    <wellList name="s" id="2">
+        <equipment name="EQ_2_1" id="4"/>
+        <equipment name="EQ_2_2" id="5"/>
+        <equipment name="EQ_2_3" id="6"/>
+    </wellList>
+</dbinfo>
