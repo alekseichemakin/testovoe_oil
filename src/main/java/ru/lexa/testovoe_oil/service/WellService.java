@@ -19,36 +19,29 @@ public class WellService extends SessionUtil implements WellDAO {
 	@Override
 	public List<Well> getAll() {
 		openTransactionSession();
-
 		List<Well> wellList = getSession()
 				.createNativeQuery("SELECT * FROM well")
 				.addEntity(Well.class)
 				.list();
-
 		closeTransactionSession();
-
 		return wellList;
 	}
 
 	@Override
 	public Well getById(long id) {
 		openTransactionSession();
-
 		Well well = (Well) getSession()
 				.createNativeQuery("SELECT * FROM well WHERE id = :id")
 				.addEntity(Well.class)
 				.setParameter("id", id)
 				.getSingleResult();
-
 		closeTransactionSession();
-
 		return well;
 	}
 
 	@Override
 	public Well getByName(String name) {
 		openTransactionSession();
-
 		Well well;
 		try {
 			well = (Well) getSession()
@@ -61,7 +54,6 @@ public class WellService extends SessionUtil implements WellDAO {
 		} finally {
 			closeTransactionSession();
 		}
-
 		return well;
 	}
 

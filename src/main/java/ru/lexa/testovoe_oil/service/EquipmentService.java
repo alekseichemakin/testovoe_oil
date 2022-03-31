@@ -31,29 +31,23 @@ public class EquipmentService  extends SessionUtil implements EquipmentDAO {
 	@Override
 	public List<Equipment> getAll() {
 		openTransactionSession();
-
 		List<Equipment> equipmentList = getSession()
 				.createNativeQuery("SELECT * FROM equipment")
 				.addEntity(Equipment.class)
 				.list();
-
 		closeTransactionSession();
-
 		return equipmentList;
 	}
 
 	@Override
 	public Equipment getById(long id) {
 		openTransactionSession();
-
 		Equipment equipment = (Equipment) getSession()
 				.createNativeQuery("SELECT * FROM equipment WHERE id = :id")
 				.addEntity(Equipment.class)
 				.setParameter("id", id)
 				.getSingleResult();
-
 		closeTransactionSession();
-
 		return equipment;
 	}
 }
