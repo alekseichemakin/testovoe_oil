@@ -1,5 +1,6 @@
 package ru.lexa.testovoe_oil;
 
+import net.bytebuddy.asm.Advice;
 import ru.lexa.testovoe_oil.command.CommandContainer;
 import ru.lexa.testovoe_oil.service.EquipmentService;
 import ru.lexa.testovoe_oil.service.IOService;
@@ -17,6 +18,8 @@ public class Main {
 			System.out.println("=Main menu: choose command=");
 			System.out.println("===========================\n");
 			String com = scanner.nextLine();
+			if (com.equals("exit") || com.equals("quit"))
+				return;
 			commandContainer.retrieveCommand(com).execute();
 		}
 	}

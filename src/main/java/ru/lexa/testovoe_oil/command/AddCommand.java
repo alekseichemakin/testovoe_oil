@@ -22,6 +22,8 @@ public class AddCommand implements Command {
 		try {
 			System.out.print("Well name: ");
 			String wellName = scanner.nextLine();
+			if (wellName.length() > 32 || wellName.length() == 0)
+				throw new RuntimeException();
 			System.out.print("Equipment amount: ");
 			int equipmentAmount = Integer.parseInt(scanner.nextLine());
 
@@ -37,6 +39,9 @@ public class AddCommand implements Command {
 
 		} catch (NumberFormatException e) {
 			System.out.println("Warning: wrong number format");
+			execute();
+		} catch (RuntimeException ex) {
+			System.out.println("Warning: name length should be less 32 and shouldn't be empty");
 			execute();
 		}
 
