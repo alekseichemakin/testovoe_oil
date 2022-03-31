@@ -1,6 +1,6 @@
-package ru.lexa.command;
+package ru.lexa.testovoe_oil.command;
 
-import static ru.lexa.command.CommandName.*;
+import static ru.lexa.testovoe_oil.command.CommandName.*;
 
 public class HelpCommand implements Command{
 

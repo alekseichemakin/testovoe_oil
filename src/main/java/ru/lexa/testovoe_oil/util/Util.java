@@ -1,4 +1,4 @@
-package ru.lexa.util;
+package ru.lexa.testovoe_oil.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,4 +1,4 @@
-package ru.lexa.entity;
+package ru.lexa.testovoe_oil.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

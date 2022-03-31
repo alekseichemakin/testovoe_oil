@@ -64,7 +64,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>ru.lexa.Main</mainClass>
+                                    <mainClass>ru.lexa.testovoe_oil.Main</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

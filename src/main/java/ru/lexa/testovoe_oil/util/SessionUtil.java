@@ -1,4 +1,4 @@
-package ru.lexa.util;
+package ru.lexa.testovoe_oil.util;
 
 import lombok.Getter;
 import org.hibernate.Session;

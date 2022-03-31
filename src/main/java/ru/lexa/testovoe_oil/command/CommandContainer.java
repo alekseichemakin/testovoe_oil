@@ -1,10 +1,10 @@
-package ru.lexa.command;
+package ru.lexa.testovoe_oil.command;
 
-import ru.lexa.dao.EquipmentDAO;
-import ru.lexa.dao.WellDAO;
+import ru.lexa.testovoe_oil.dao.EquipmentDAO;
+import ru.lexa.testovoe_oil.dao.WellDAO;
 import com.google.common.collect.ImmutableMap;
 
-import static ru.lexa.command.CommandName.*;
+import static ru.lexa.testovoe_oil.command.CommandName.*;
 
 public class CommandContainer {
 	private final ImmutableMap<String, Command> commandMap;

@@ -1,8 +1,8 @@
-package ru.lexa.service;
+package ru.lexa.testovoe_oil.service;
 
-import ru.lexa.dao.EquipmentDAO;
-import ru.lexa.entity.Equipment;
-import ru.lexa.util.SessionUtil;
+import ru.lexa.testovoe_oil.dao.EquipmentDAO;
+import ru.lexa.testovoe_oil.entity.Equipment;
+import ru.lexa.testovoe_oil.util.SessionUtil;
 
 import java.util.List;
 

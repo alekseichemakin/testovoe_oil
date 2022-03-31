@@ -1,6 +1,6 @@
-package ru.lexa.dao;
+package ru.lexa.testovoe_oil.dao;
 
-import ru.lexa.entity.Equipment;
+import ru.lexa.testovoe_oil.entity.Equipment;
 
 import java.util.List;
 

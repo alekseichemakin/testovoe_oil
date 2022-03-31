@@ -1,6 +1,6 @@
-package ru.lexa.dao;
+package ru.lexa.testovoe_oil.dao;
 
-import ru.lexa.entity.Well;
+import ru.lexa.testovoe_oil.entity.Well;
 
 import java.util.List;
 

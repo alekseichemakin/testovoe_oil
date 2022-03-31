@@ -1,9 +1,9 @@
-package ru.lexa.command;
+package ru.lexa.testovoe_oil.command;
 
-import ru.lexa.dao.WellDAO;
-import ru.lexa.entity.Equipment;
-import ru.lexa.entity.Well;
-import ru.lexa.service.IOService;
+import ru.lexa.testovoe_oil.dao.WellDAO;
+import ru.lexa.testovoe_oil.entity.Equipment;
+import ru.lexa.testovoe_oil.entity.Well;
+import ru.lexa.testovoe_oil.service.IOService;
 
 import java.util.*;
 

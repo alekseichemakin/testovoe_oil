@@ -1,8 +1,8 @@
-package ru.lexa.service;
+package ru.lexa.testovoe_oil.service;
 
-import ru.lexa.dao.WellDAO;
-import ru.lexa.entity.Well;
-import ru.lexa.util.SessionUtil;
+import ru.lexa.testovoe_oil.dao.WellDAO;
+import ru.lexa.testovoe_oil.entity.Well;
+import ru.lexa.testovoe_oil.util.SessionUtil;
 
 import javax.persistence.NoResultException;
 import java.util.List;

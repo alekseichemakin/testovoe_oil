@@ -1,4 +1,4 @@
-package ru.lexa.service;
+package ru.lexa.testovoe_oil.service;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

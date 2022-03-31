@@ -1,9 +1,9 @@
-package ru.lexa;
+package ru.lexa.testovoe_oil;
 
-import ru.lexa.command.CommandContainer;
-import ru.lexa.service.EquipmentService;
-import ru.lexa.service.IOService;
-import ru.lexa.service.WellService;
+import ru.lexa.testovoe_oil.command.CommandContainer;
+import ru.lexa.testovoe_oil.service.EquipmentService;
+import ru.lexa.testovoe_oil.service.IOService;
+import ru.lexa.testovoe_oil.service.WellService;
 
 import java.util.Scanner;
 
