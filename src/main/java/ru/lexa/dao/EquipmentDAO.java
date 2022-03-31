@@ -1,6 +1,6 @@
-package dao;
+package ru.lexa.dao;
 
-import entity.Equipment;
+import ru.lexa.entity.Equipment;
 
 import java.util.List;
 
@@ -11,7 +11,6 @@ public interface EquipmentDAO {
 	//read
 	List<Equipment> getAll();
 	Equipment getById(long id);
-	Equipment getByName(String name);
 
 	//update
 	void update(Equipment equipment);

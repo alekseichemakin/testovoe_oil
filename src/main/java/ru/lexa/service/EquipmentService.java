@@ -1,8 +1,8 @@
-package service;
+package ru.lexa.service;
 
-import dao.EquipmentDAO;
-import entity.Equipment;
-import util.SessionUtil;
+import ru.lexa.dao.EquipmentDAO;
+import ru.lexa.entity.Equipment;
+import ru.lexa.util.SessionUtil;
 
 import java.util.List;
 
@@ -50,21 +50,6 @@ public class EquipmentService  extends SessionUtil implements EquipmentDAO {
 				.createNativeQuery("SELECT * FROM equipment WHERE id = :id")
 				.addEntity(Equipment.class)
 				.setParameter("id", id)
-				.getSingleResult();
-
-		closeTransactionSession();
-
-		return equipment;
-	}
-
-	@Override
-	public Equipment getByName(String name) {
-		openTransactionSession();
-
-		Equipment equipment = (Equipment) getSession()
-				.createNativeQuery("SELECT * FROM equipment WHERE name = :name")
-				.addEntity(Equipment.class)
-				.setParameter("name", name)
 				.getSingleResult();
 
 		closeTransactionSession();

@@ -1,9 +1,8 @@
-package service;
+package ru.lexa.service;
 
-import dao.WellDAO;
-import entity.Equipment;
-import entity.Well;
-import util.SessionUtil;
+import ru.lexa.dao.WellDAO;
+import ru.lexa.entity.Well;
+import ru.lexa.util.SessionUtil;
 
 import javax.persistence.NoResultException;
 import java.util.List;

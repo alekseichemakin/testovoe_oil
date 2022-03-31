@@ -1,4 +1,4 @@
-package util;
+package ru.lexa.util;
 
 import lombok.Getter;
 import org.hibernate.Session;

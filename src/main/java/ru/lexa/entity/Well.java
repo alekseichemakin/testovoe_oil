@@ -1,4 +1,4 @@
-package entity;
+package ru.lexa.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

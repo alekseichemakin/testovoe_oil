@@ -1,7 +1,6 @@
-package dao;
+package ru.lexa.dao;
 
-import entity.Equipment;
-import entity.Well;
+import ru.lexa.entity.Well;
 
 import java.util.List;
 
