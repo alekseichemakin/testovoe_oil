@@ -17,8 +17,8 @@ public class AddCommand implements Command {
 
 	@Override
 	public void execute() {
-
 		Scanner scanner = IOService.getScanner();
+
 		try {
 			System.out.print("Well name: ");
 			String wellName = scanner.nextLine();
@@ -33,10 +33,8 @@ public class AddCommand implements Command {
 				well.setName(wellName);
 				wellDAO.add(well);
 			}
-
 			well.setEquipment(generateEquipment(equipmentAmount, well));
 			wellDAO.update(well);
-
 		} catch (NumberFormatException e) {
 			System.out.println("Warning: wrong number format");
 			execute();
@@ -60,7 +58,6 @@ public class AddCommand implements Command {
 		} else {
 			equipmentList = new ArrayList<>();
 		}
-
 		for (int i = 0; i < amount; i++) {
 			lastId++;
 			Equipment equipment = new Equipment();
